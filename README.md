@@ -6,3 +6,6 @@ NewsHub is a web application that aggregates top headlines from major Indian new
  **Keyword Search**: Search for news articles based on specific keywords.<br>
  **Notes**: Take notes directly within the app. Notes are auto-saved and can be downloaded for offline use.<br>
 
+ ## Demo Video
+**Youtube link** : https://www.youtube.com/watch?v=nXQdkBO1YAI
+
