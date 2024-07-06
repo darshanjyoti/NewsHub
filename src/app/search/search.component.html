@@ -1,0 +1,17 @@
+<div class="container mt-3">
+    <h2>Search Results</h2>
+    <div *ngIf="articles && articles.length > 0; else noResults">
+      <div *ngFor="let article of articles" class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ article.title }}</h5>
+          <p class="card-text">{{ article.description }}</p>
+          <a [href]="article.url" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+      </div>
+    </div>
+    <ng-template #noResults>
+      <p>No articles found for "{{ searchKeyword }}".</p>
+    </ng-template>
+    <button (click)="showMore()">Show more</button>
+  </div>
+  

@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" routerLink="/" routerLinkActive="active"><strong>NewsHub</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active"><strong>Home</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/business" routerLinkActive="active"><strong>Business</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/tech" routerLinkActive="active"><strong>Tech</strong></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" (ngSubmit)="searchArticles()">
+        <div class="input-group">
+          <input class="form-control" type="search"  [placeholder]="getCurrentPlaceholder()" aria-label="Search"
+            [(ngModel)]="searchKeyword" name="searchKeyword">
+          <div class="input-group-append">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </div>
+        </div>
+      </form>
+      <ul class="navbar-nav ml-auto"> <!-- Adjusted position to the right -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/notes" routerLinkActive="active"><strong>Notes</strong></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content Area with Scrollable Content -->
+  <div class="content">
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

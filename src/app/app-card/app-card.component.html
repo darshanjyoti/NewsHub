@@ -1,0 +1,20 @@
+<div class="card-container">
+    <div *ngFor="let source of newsSources" class="card-wrapper">
+      <div class="card">
+        <div class="card-header bg-info text-white">
+          {{ source.name }}
+        </div>
+        <ul class="list-group list-group-flush">
+          <li *ngFor="let article of source.articles" class="list-group-item">
+            <h5 class="card-title">{{ article.title }}</h5>
+            <p class="card-text">{{ article.description }}</p>
+            <div class="article-details">
+              <img [src]="article.urlToImage" alt="{{ article.title }}" class="img-fluid" *ngIf="article.urlToImage">
+              <a [href]="article.url" target="_blank" class="btn btn-primary btn-sm mt-3 d-block" style="width: 2in;">Read More</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  

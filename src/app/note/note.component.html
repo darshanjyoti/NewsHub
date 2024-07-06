@@ -1,0 +1,8 @@
+<div class="container mt-5">
+    <div class="form-group">
+      <label for="note">Take Notes:</label>
+      <textarea class="form-control large-textarea" id="note" [(ngModel)]="noteContent" (input)="saveNoteLocally()"></textarea>
+    </div>
+    <button class="btn btn-primary mt-2" (click)="downloadNote()">Download Note</button>
+  </div>
+  

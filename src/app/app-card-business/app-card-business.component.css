@@ -1,0 +1,67 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between cards */
+    color: aqua;
+  }
+  
+  .card-wrapper {
+    flex: 1 1 calc(100% - 20px); /* Each card wrapper takes 50% of the container width minus the gap */
+    max-width: calc(100% - 20px);
+    display: flex; /* Adjust max-width based on gap to prevent overflow */
+    justify-content: center;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(73, 4, 103);
+    width: 80%; /* Ensures each card takes full width of its container */
+    background-color: #007bff;
+  }
+  
+  .card-header {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #007bff; /* Example primary color */
+  }
+  
+  .list-group-item {
+    padding: 15px;
+    border-bottom: 3px solid #f70909;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    max-height: 200px; /* Adjust the maximum height as per your design */
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .mt-3 {
+    margin-top: 10px;
+  }
+  

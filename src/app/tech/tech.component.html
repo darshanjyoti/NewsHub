@@ -1,0 +1,14 @@
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h2  class="title">Top Tech News</h2>
+        <ng-container *ngIf="newsSources.length > 0; else errorTemplate">
+        <app-app-card [newsSources]="newsSources"></app-app-card>
+      </ng-container>
+      <ng-template #errorTemplate>
+        <p>We are currently facing some issues fetching the latest tech news. Please check back in a few moments.</p>
+      </ng-template>
+      </div>
+    </div>
+  </div>
+  
