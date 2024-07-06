@@ -7,7 +7,7 @@ import { NewsApiResponse } from './news.model';
   providedIn: 'root'
 })
 export class NewsService {
-  private apiKey = '6432654db35b4bbb8b0ac6736df6347e';//'2898e33985c049139364f70b9ad76a4b';
+  private apiKey = YOUR_API_KEY;
   private baseUrl = 'https://newsapi.org/v2/top-headlines';
   private baseUrlforSearch = 'https://newsapi.org/v2/everything';
 
